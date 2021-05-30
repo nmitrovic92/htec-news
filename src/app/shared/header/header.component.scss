@@ -1,8 +1,8 @@
-@import '../../../scss/variables';
-@import '../../../scss/mixins';
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
 
 nav {
-    align-items: center;
+	align-items: center;
 	min-height: 48px;
 
 	@include mobile() {
@@ -27,7 +27,9 @@ nav {
 
 .btn {
 	&-link {
-		&.active, &:hover, &:focus {
+		&.active,
+		&:hover,
+		&:focus {
 			background-color: $secondary-btn-background-color !important;
 		}
 	}

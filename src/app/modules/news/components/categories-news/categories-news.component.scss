@@ -1,8 +1,7 @@
-@import '../../../../../scss/variables';
-@import '../../../../../scss/mixins';
+@import "../../../../../scss/variables";
+@import "../../../../../scss/mixins";
 
 .categories {
-
 	h1 {
 		padding-left: 21px;
 	}
@@ -17,35 +16,13 @@
 	}
 
 	&__accordion-heading {
-		button, i {
+		button,
+		i {
 			&:hover {
-				h5, i {
+				h5,
+				i {
 					color: $primary-btn-color;
 				}
-			}
-		}
-
-		> i {
-			display: flex;
-			justify-content: center;
-			background-color: $primary-btn-color;
-			padding: 0.25rem;
-			border-radius: 50%;
-			color: white;
-			width: 24px;
-
-			&:before {
-				display: flex;
-				justify-content: center;
-				width: 16px;
-
-				@include mobile() {
-					width: auto;
-				}
-			}
-
-			@include mobile() {
-				width: 21px;
 			}
 		}
 	}

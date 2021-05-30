@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 .btn {
 	&-primary {
@@ -9,7 +9,10 @@
 		&:not(:disabled) {
 			transition: 0.3s ease;
 
-			&:hover, &.active, &:active, &:focus {
+			&:hover,
+			&.active,
+			&:active,
+			&:focus {
 				background-color: $primary-btn-color !important;
 				border-color: $primary-btn-color !important;
 				box-shadow: 0 0 0 0.1rem rgba(113, 106, 202, 0.37) !important;
@@ -29,10 +32,13 @@
 		&:not(:disabled) {
 			transition: 0.3s ease;
 
-			&:hover, &.active, &:active, &:focus {
+			&:hover,
+			&.active,
+			&:active,
+			&:focus {
 				background-color: $secondary-btn-color !important;
 				border-color: $secondary-btn-color !important;
-				box-shadow: 0 0 0 .1rem rgba(255, 0, 108, 0.41) !important;
+				box-shadow: 0 0 0 0.1rem $secondary-btn-color !important;
 				color: white;
 			}
 		}
@@ -43,13 +49,15 @@
 	}
 
 	&-link {
-		&.active, &:hover, &:focus {
+		&.active,
+		&:hover,
+		&:focus {
 			text-decoration: none;
 
 			span {
 				color: $secondary-btn-color;
 				font-weight: 500;
-				transition: all .3s;
+				transition: all 0.3s;
 				font-size: 1.4rem;
 			}
 		}
